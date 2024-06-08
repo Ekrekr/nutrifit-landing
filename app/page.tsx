@@ -1,113 +1,165 @@
 import Image from "next/image";
 
+// Based on landingfolio designs.
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main style={{ minHeight: "100vh" }}>
+      <div className="bg-gray-50" style={{ minHeight: "100vh" }}>
+        <header className="py-4 md:py-6">
+          <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between min-h-10">
+              {/* <div className="flex-shrink-0">
+                <a
+                  href="#"
+                  title=""
+                  className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  <img className="w-auto h-8" src="/nutrifit-icon.png" alt="" />
+                </a>
+              </div> */}
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              {/* <div className="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
+                <a
+                  href="#"
+                  title=""
+                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  About Nutrifit
+                </a>
+              </div> */}
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+              {/* <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
+                <a
+                  href="#"
+                  title=""
+                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  Sign in
+                </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                <a
+                  href="#"
+                  title=""
+                  className="px-5 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button"
+                >
+                  Create free account
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </header>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <section className="pt-12 pb-12 sm:pb-16 lg:pt-8 flex h-screen">
+          <div className="px-4 mx-auto max-w-3xl sm:px-6 lg:px-8">
+            <div className=" grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
+              <div>
+                <div className="text-center lg:text-left">
+                  <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
+                    Nutrifit.
+                  </h1>
+                  <p className="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">
+                    Your Personal AI Nutritionist:
+                    <br />
+                    Snap, Track, & Reach Your Goals.
+                  </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.nutrifit.app&hl=en-US&ah=gbYZgR7bmz2h7DU6gaAfCxU26Hk&pli=1">
+                    <button
+                      type="submit"
+                      className="mt-10 inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
+                    >
+                      Download for Android
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div className="max-w-md">
+                <Image
+                  className="w-full rounded-3xl"
+                  src="/nutrifit-in-use.png"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
+  );
+}
+
+function StatsBlock() {
+  return (
+    <>
+      <div className="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+        <div className="flex items-center">
+          <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
+            2943
+          </p>
+          <p className="ml-3 text-sm text-gray-900 font-pj">
+            Cards
+            <br />
+            Delivered
+          </p>
+        </div>
+
+        <div className="hidden sm:block">
+          <svg
+            className="text-gray-400"
+            width="16"
+            height="39"
+            viewBox="0 0 16 39"
+            fill="none"
+            stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="0.72265" y1="10.584" x2="15.7226" y2="0.583975"></line>
+            <line x1="0.72265" y1="17.584" x2="15.7226" y2="7.58398"></line>
+            <line x1="0.72265" y1="24.584" x2="15.7226" y2="14.584"></line>
+            <line x1="0.72265" y1="31.584" x2="15.7226" y2="21.584"></line>
+            <line x1="0.72265" y1="38.584" x2="15.7226" y2="28.584"></line>
+          </svg>
+        </div>
+
+        <div className="flex items-center">
+          <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
+            $1M+
+          </p>
+          <p className="ml-3 text-sm text-gray-900 font-pj">
+            Transaction
+            <br />
+            Completed
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ExpressInterest() {
+  return (
+    <form action="#" method="POST" className="mt-8 sm:mt-10">
+      <div className="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter email address"
+          className="block w-full px-4 py-4 text-gray-900 placeholder-gray-900 bg-transparent border border-gray-400 outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
+        />
+        <div className="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
+          <button
+            type="submit"
+            className="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
+          >
+            Get Free Card
+          </button>
+        </div>
+      </div>
+    </form>
   );
 }
