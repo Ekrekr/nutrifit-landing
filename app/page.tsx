@@ -1,92 +1,51 @@
 import Image from "next/image";
 
-// Based on landingfolio designs.
 export default function Home() {
   return (
-    <main style={{ minHeight: "100vh" }}>
-      <div className="bg-gray-50" style={{ minHeight: "100vh" }}>
-        <header className="py-4 md:py-6">
-          <div className="container px-4 mx-auto sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between min-h-10">
-              {/* <div className="flex-shrink-0">
-                <a
-                  href="#"
-                  title=""
-                  className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  <img className="w-auto h-8" src="/nutrifit-icon.png" alt="" />
-                </a>
-              </div> */}
+    <main className="min-h-full min-w-full bg-gray-50 ">
+      <div className="flex items-center h-screen">
+        <div className="m-auto max-w-3xl flex flex-column flex-wrap gap-10">
+          <div className="text-center sm:text-left mx-auto">
+            <h1 className="text-5xl font-bold text-gray-900 font-pj">
+              Nutrifit.
+            </h1>
+            <span className="inline-flex px-2 text-md font-bold text-white bg-green-500 rounded-lg font-pj">
+              Alpha
+            </span>
+            <p className="text-xl text-gray-600 mt-12 font-inter">
+              Your Personal AI Nutritionist:
+              <br />
+              Snap, Track, & Reach Your Goals.
+            </p>
 
-              {/* <div className="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
-                <a
-                  href="#"
-                  title=""
-                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  About Nutrifit
-                </a>
-              </div> */}
-
-              {/* <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
-                <a
-                  href="#"
-                  title=""
-                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  Sign in
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="px-5 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  Create free account
-                </a>
-              </div> */}
-            </div>
-          </div>
-        </header>
-
-        <section className="pt-12 pb-12 sm:pb-16 lg:pt-8 flex h-screen">
-          <div className="px-4 mx-auto max-w-3xl sm:px-6 lg:px-8">
-            <div className=" grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
-              <div>
-                <div className="text-center lg:text-left">
-                  <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
-                    Nutrifit.
-                  </h1>
-                  <p className="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">
-                    Your Personal AI Nutritionist:
-                    <br />
-                    Snap, Track, & Reach Your Goals.
-                  </p>
-
-                  <a href="https://play.google.com/store/apps/details?id=com.nutrifit.app&hl=en-US&ah=gbYZgR7bmz2h7DU6gaAfCxU26Hk&pli=1">
-                    <button
-                      type="submit"
-                      className="mt-10 inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
-                    >
-                      Download for Android
-                    </button>
-                  </a>
-                </div>
-              </div>
-
-              <div className="max-w-md">
+            <a href="https://play.google.com/store/apps/details?id=com.nutrifit.app&hl=en-US&ah=gbYZgR7bmz2h7DU6gaAfCxU26Hk&pli=1">
+              <button
+                type="submit"
+                className="mt-12 inline-flex px-5 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
+              >
+                Download for Android
                 <Image
-                  className="w-full rounded-3xl"
-                  src="/nutrifit-in-use.png"
-                  width={1024}
-                  height={1024}
-                  alt=""
+                  className="max-w-7 max-h-7 ml-3"
+                  src="/nutrifit-icon.png"
+                  width={512}
+                  height={512}
+                  alt="Nutrifit logo."
                 />
-              </div>
-            </div>
+              </button>
+            </a>
+            <p className="text-sm text-gray-600 font-inter">
+              Internal testers only.
+            </p>
           </div>
-        </section>
+
+          <Image
+            className="max-w-sm float-right mx-auto w-full rounded-3xl"
+            src="/nutrifit-in-use.png"
+            width={1024}
+            height={1024}
+            alt="A woman taking a picture of her food for her personal AI nutritionist."
+          />
+        </div>
       </div>
     </main>
   );

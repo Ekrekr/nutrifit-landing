@@ -2,6 +2,7 @@
 
 ## Quicklinks
 
+- Hosted at [getnutrifit.com](https://getnutrifit.com).
 - [Vercel Deployment]().
 - [Github Repository](https://github.com/Ekrekr/nutrifit-landing).
 
@@ -10,3 +11,5 @@
 ```bash
 bun run dev
 ```
+
+Recommended VSCode extension: tailwind.
