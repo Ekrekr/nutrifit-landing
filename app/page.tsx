@@ -44,6 +44,8 @@ export default function Home() {
             width={1024}
             height={1024}
             alt="A woman taking a picture of her food for her personal AI nutritionist."
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRF0dXbxn9Y2wAAAApJREFUeJxjZAAAAAQAAiFkrWoAAAAASUVORK5CYII="
           />
         </div>
       </div>
