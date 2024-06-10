@@ -9,8 +9,8 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-gray-900 font-pj">
               Nutrifit.
             </h1>
-            <span className="inline-flex px-2 text-md font-bold text-white bg-green-500 rounded-lg font-pj">
-              Alpha
+            <span className="inline-flex px-2 text-md font-bold text-white bg-green-600 rounded-lg font-pj">
+              Beta
             </span>
             <p className="text-xl text-gray-600 mt-12 font-inter">
               Your Personal AI Nutritionist:
@@ -18,7 +18,11 @@ export default function Home() {
               Snap, Track, & Reach Your Goals.
             </p>
 
-            <a href="https://play.google.com/store/apps/details?id=com.nutrifit.app&hl=en-US&ah=gbYZgR7bmz2h7DU6gaAfCxU26Hk&pli=1">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.nutrifit.app&hl=en-US&ah=gbYZgR7bmz2h7DU6gaAfCxU26Hk&pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
                 type="submit"
                 className="mt-12 inline-flex px-5 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600"
@@ -33,20 +37,39 @@ export default function Home() {
                 />
               </button>
             </a>
-            <p className="text-sm text-gray-600 font-inter">
-              Internal testers only.
+            <p className="mt-4">
+              <a
+                className="text-sm text-blue-800 font-inter"
+                href="https://forms.gle/vNa6P8YnSt6xzBqP9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Request access,
+              </a>
+            </p>
+            <p>
+              <a
+                className="text-sm text-blue-800 font-inter"
+                href="https://forms.gle/EMuCPHFdPfYejsBu9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                or get in touch.
+              </a>
             </p>
           </div>
 
-          <Image
-            className="max-w-sm float-right mx-auto w-full rounded-3xl"
-            src="/nutrifit-in-use.png"
-            width={1024}
-            height={1024}
-            alt="A woman taking a picture of her food for her personal AI nutritionist."
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRF0dXbxn9Y2wAAAApJREFUeJxjZAAAAAQAAiFkrWoAAAAASUVORK5CYII="
-          />
+          <div className="max-w-sm float-right mx-auto w-full">
+            <Image
+              className="rounded-3xl"
+              src="/nutrifit-in-use.png"
+              width={1024}
+              height={1024}
+              alt="A woman taking a picture of her food for her personal AI nutritionist."
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRF0dXbxn9Y2wAAAApJREFUeJxjZAAAAAQAAiFkrWoAAAAASUVORK5CYII="
+            />
+          </div>
         </div>
       </div>
     </main>
